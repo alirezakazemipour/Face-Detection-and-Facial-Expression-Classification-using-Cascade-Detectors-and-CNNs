@@ -1,8 +1,8 @@
 from PIL import Image
 import glob
 
-i=945
-for j in range(13,37):
+i=3936-65
+for j in range(37,40):
 
   fnames=glob.glob("/home/alireza/Documents/cv-final-project/CroppedYale/yaleB"+str(j)+"/file-*.pgm")
   fnames.sort()
