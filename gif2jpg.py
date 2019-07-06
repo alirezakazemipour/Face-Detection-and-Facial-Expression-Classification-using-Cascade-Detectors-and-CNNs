@@ -4,33 +4,23 @@ import glob
 import cv2
 
 i=1
-for j in range(1,7):
 
-  fnames=glob.glob("/home/alireza/Documents/cv-final-project/CroppedYale/yaleB0"+str(j)+"/file-*.pgm")
-  fnames.sort()
-  print(len(fnames))
-
-
-  for fname in fnames:
-    print(fname[0:-3])
-    im=Image.open(fname)
-    im.convert('RGB')
-    im.save("/home/alireza/Documents/cv-final-project/positiveSamples/"+str(i)+".jpg")
-    i+=1
-
-for j in range(11,40):
-
-  fnames=glob.glob("/home/alireza/Documents/cv-final-project/CroppedYale/yaleB"+str(j)+"/file-*.pgm")
-  fnames.sort()
-  print(len(fnames))
+fnames=glob.glob("/home/alireza/Documents/cv-final-project/download_neg_samples/*.jpg")
+fnames.sort()
+print(len(fnames))
 
 
-  for fname in fnames:
-    print(fname[0:-3])
-    im=Image.open(fname)
-    im.convert('RGB')
-    im.save("/home/alireza/Documents/cv-final-project/positiveSamples/"+str(i)+".jpg")
-    i+=1
+for fname in fnames:
+  print(fname[0:-3])
+  try:
+      im=Image.open(fname)
+      im=im.convert('LA')
+      im=im.resize((168,192),Image.ANTIALIAS)
+      im.save("/home/alireza/Documents/cv-final-project/negativeSamples/"+str(i)+".png")
+      i+=1
+  except:
+      pass
+
 #
 # print(i)
 #
