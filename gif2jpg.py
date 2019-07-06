@@ -1,13 +1,16 @@
 from PIL import Image
 import glob
 
-fnames=glob.glob("/home/alireza/Documents/cv-final-project/CroppedYale/yaleB02/file-*.pgm")
-fnames.sort()
-print(len(fnames))
+i=945
+for j in range(13,37):
 
-i=231
+  fnames=glob.glob("/home/alireza/Documents/cv-final-project/CroppedYale/yaleB"+str(j)+"/file-*.pgm")
+  fnames.sort()
+  print(len(fnames))
 
-for fname in fnames:
+  i=i+65
+
+  for fname in fnames:
     print(fname[0:-3])
     im=Image.open(fname)
     im.convert('RGB')
