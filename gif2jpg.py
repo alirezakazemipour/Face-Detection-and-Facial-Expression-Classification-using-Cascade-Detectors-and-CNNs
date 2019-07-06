@@ -14,9 +14,9 @@ for fname in fnames:
   print(fname[0:-3])
   try:
       im=Image.open(fname)
-      im=im.convert('LA')
+      # im=im.convert('LA')
       im=im.resize((168,192),Image.ANTIALIAS)
-      im.save("/home/alireza/Documents/cv-final-project/negativeSamples/"+str(i)+".png")
+      im.save("/home/alireza/Documents/cv-final-project/negativeSamples/"+str(i)+".jpg")
       i+=1
   except:
       pass
