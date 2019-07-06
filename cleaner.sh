@@ -12,3 +12,5 @@ done
 
 
 #ls -l | grep ^- | wc -l show no. of files in a folder
+#ls | cat -n | while read n f; do mv "$f" "$(($n+$d)).jpg"; done
+
