@@ -3,9 +3,9 @@ import PIL
 import glob
 import cv2
 
-i=1
+i=583
 
-fnames=glob.glob("/home/alireza/Documents/cv-final-project/download_neg_samples/*.jpg")
+fnames=glob.glob("/home/alireza/Documents/cv-final-project/Houses-dataset-master/Houses Dataset/*.jpg")
 fnames.sort()
 print(len(fnames))
 
