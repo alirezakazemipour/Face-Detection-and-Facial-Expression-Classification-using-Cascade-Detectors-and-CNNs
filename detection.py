@@ -2,11 +2,11 @@ from PIL import Image
 import PIL
 import glob
 import cv2
-i=138
+i=155
 k=0
 face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
 
-fnames=glob.glob("/home/alireza/Documents/cv-final-project/ExtendedYale/yaleB20/*.pgm")
+fnames=glob.glob("/home/alireza/Documents/cv-final-project/ExtendedYale/yaleB31/*.pgm")
 fnames.sort()
 
 for fname in fnames:
