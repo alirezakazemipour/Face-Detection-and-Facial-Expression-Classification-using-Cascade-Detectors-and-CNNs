@@ -6,7 +6,7 @@ i=155
 k=0
 face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
 
-fnames=glob.glob("/home/alireza/Documents/cv-final-project/ExtendedYale/yaleB31/*.pgm")
+fnames=glob.glob("/home/alireza/Documents/cv-final-project/Aberdeen/*.jpg")
 fnames.sort()
 
 for fname in fnames:
@@ -32,6 +32,7 @@ for fname in fnames:
             # cv2.imshow("J",J)
             cv2.imwrite("/home/alireza/Documents/cv-final-project/falsePositives/"+str(i)+".jpg",J)
             i+=1
+
     k+=1
 
 cv2.destroyAllWindows()

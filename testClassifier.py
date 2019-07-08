@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 # https://github.com/opencv/opencv/blob/master/data/lbpcascades/lbpcascade_frontalface_improved.xml
-face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
+face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/Face-Detection-and-Facial-Expression-Classification-using-Cascade-Detectors-and-Convolutional-Neural/lbp/cascade.xml' )
 # https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_smile.xml
 smile_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-lab14/smile.xml' )
 
