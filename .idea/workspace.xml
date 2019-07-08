@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ca38c8-2fcf-4b13-bc14-144ef561d1c3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/LeNet.py" afterPath="$PROJECT_DIR$/LeNet.py" />
-      <change beforePath="$PROJECT_DIR$/train_network.py" afterPath="$PROJECT_DIR$/train_network.py" />
+      <change beforePath="$PROJECT_DIR$/tes.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,8 +88,8 @@
       <file leaf-file-name="train_network.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="68" column="77" lean-forward="true" selection-start-line="68" selection-start-column="77" selection-end-line="68" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -717,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/train_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="264">
+          <caret line="68" column="77" lean-forward="true" selection-start-line="68" selection-start-column="77" selection-end-line="68" selection-end-column="77" />
           <folding />
         </state>
       </provider>
