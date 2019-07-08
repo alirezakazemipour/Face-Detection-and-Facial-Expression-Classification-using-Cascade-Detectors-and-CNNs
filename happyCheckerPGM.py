@@ -6,7 +6,7 @@ import cv2
 i=1
 for j in range(1,41):
     print(j)
-    fnames=glob.glob("/home/alireza/Documents/cv-final-project/orl_faces/s"+str(j)+/*.pgm')
+    fnames=glob.glob("/home/alireza/Documents/cv-final-project/orl_faces/s"+str(j)+'/*.pgm')
     print("/home/alireza/Documents/cv-final-project/orl_faces/s"+str(j)+'/*.pgm')
     fnames.sort()
 
