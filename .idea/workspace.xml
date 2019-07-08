@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ca38c8-2fcf-4b13-bc14-144ef561d1c3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/happyCheckerPGM.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jaffeSorter.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/happyChecker.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/happyCheckerPGM.py" afterPath="$PROJECT_DIR$/happyCheckerPGM.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,11 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="happyCheckerPGM.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="happyCheckerPGM.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/happyCheckerPGM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="74" lean-forward="true" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+            <state relative-caret-position="288">
+              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="happyChecker.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/happyChecker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -112,6 +124,7 @@
         <option value="$PROJECT_DIR$/detection.py" />
         <option value="$PROJECT_DIR$/jaffeSorter.py" />
         <option value="$PROJECT_DIR$/happyCheckerPGM.py" />
+        <option value="$PROJECT_DIR$/happyChecker.py" />
       </list>
     </option>
   </component>
@@ -163,7 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.happyCheckerPGM">
+  <component name="RunManager" selected="Python.happyChecker">
     <configuration name="detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -195,6 +208,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Face-Detection-and-Facial-Expression-Classification-using-Cascade-Detectors-and-Convolutional-Neural" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gif2jpg.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="happyChecker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Face-Detection-and-Facial-Expression-Classification-using-Cascade-Detectors-and-Convolutional-Neural" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/happyChecker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -236,18 +267,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.gif2jpg" />
       <item index="1" class="java.lang.String" itemvalue="Python.detection" />
       <item index="2" class="java.lang.String" itemvalue="Python.jaffeSorter" />
       <item index="3" class="java.lang.String" itemvalue="Python.happyCheckerPGM" />
+      <item index="4" class="java.lang.String" itemvalue="Python.happyChecker" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.happyCheckerPGM" />
-        <item index="1" class="java.lang.String" itemvalue="Python.jaffeSorter" />
-        <item index="2" class="java.lang.String" itemvalue="Python.detection" />
-        <item index="3" class="java.lang.String" itemvalue="Python.gif2jpg" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.happyChecker" />
+        <item index="1" class="java.lang.String" itemvalue="Python.happyCheckerPGM" />
+        <item index="2" class="java.lang.String" itemvalue="Python.jaffeSorter" />
+        <item index="3" class="java.lang.String" itemvalue="Python.detection" />
+        <item index="4" class="java.lang.String" itemvalue="Python.gif2jpg" />
       </list>
     </recent_temporary>
   </component>
@@ -515,8 +548,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/happyCheckerPGM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="74" lean-forward="true" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+        <state relative-caret-position="288">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/happyChecker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
