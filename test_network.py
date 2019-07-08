@@ -14,7 +14,7 @@ cap = cv2.VideoCapture(0)
 print( "[INFO] loading network..." )
 model = load_model( "happy_not_happy.model" )
 face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
-
+k=0
 while True:
 
 	ret, I = cap.read()
@@ -36,16 +36,21 @@ while True:
 		image = img_to_array( image )
 		image = np.expand_dims( image, axis=0 )
 
-
-
-
+		k+=1
 		# classify the input image
-		(not_happy, happy) = model.predict(image)[0]
-		print(happy)
+		(not_happy, happy, neutral) = model.predict(image)[0]
+		print( k )
 
 		# build the label
-		label = "happy" if happy > not_happy else "not_happy"
-		proba = happy if happy > not_happy else not_happy
+		if happy > neutral and happy >not_happy:
+			label = "happy"
+			proba = happy
+		elif happy < neutral and neutral > not_happy:
+			label = "neutral"
+			proba = neutral
+		else:
+				label = "not happy"
+				proba = not_happy
 		label = "{}: {:.2f}%".format(label, proba * 100)
 
 		# draw the label on the image

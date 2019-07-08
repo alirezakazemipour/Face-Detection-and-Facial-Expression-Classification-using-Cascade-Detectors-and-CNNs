@@ -13,6 +13,6 @@ for fname in fnames:
     im=Image.open(fname)
     im=im.convert('RGB')
     # im=im.resize( (168,192), PIL.Image.ANTIALIAS )
-    im.save("/home/alireza/Documents/cv-final-project/happyChecker/"+str(i)+".jpg")
+    im.save("/home/alireza/Documents/cv-final-project/angryChecker/"+str(i)+".jpg")
     print(im.size)
     i+=1

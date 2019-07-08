@@ -16,7 +16,7 @@ for fname in fnames:
     if key == ord( 'q' ):
              exit(0)
     elif key== ord('s'):
-            cv2.imwrite("/home/alireza/Desktop/happy/"+str(i)+".jpg",I)
+            cv2.imwrite("/home/alireza/Documents/cv-final-project/angry/"+str(i)+".jpg",I)
             i+=1
 
 cv2.destroyAllWindows()

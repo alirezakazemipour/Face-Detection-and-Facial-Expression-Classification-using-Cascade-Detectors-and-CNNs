@@ -12,9 +12,10 @@ import cv2
 # load the trained convolutional neural network
 print( "[INFO] loading network..." )
 model = load_model( "happy_not_happy.model" )
+
 face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
 
-fnames=glob.glob("/home/alireza/Documents/cv-final-project/Iranian/*.jpg")
+fnames=glob.glob("/home/alireza/Documents/cv-final-project/Iranian/*.JPG")
 fnames.sort()
 
 for fname in fnames:
@@ -37,12 +38,11 @@ for fname in fnames:
         image=orig[y1:y2,x1:x2]
 
         # pre-process the image for classification
-        cv2.imshow("image",image)
+        # cv2.imshow("image",image)
         image = cv2.resize(image, (28, 28))
         image = image.astype("float") / 255.0
         image = img_to_array(image)
         image = np.expand_dims(image, axis=0)
-
 
 
         # classify the input image

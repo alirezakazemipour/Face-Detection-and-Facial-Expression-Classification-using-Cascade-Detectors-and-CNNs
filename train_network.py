@@ -30,9 +30,9 @@ ap.add_argument("-p", "--plot", type=str, default="plot.png",
 args = vars(ap.parse_args())
 # initialize the number of epochs to train for, initial learning rate,
 # and batch size
-EPOCHS = 25
+EPOCHS = 35 #25
 INIT_LR = 1e-3
-BS = 32
+BS = 8 #32
 
 # initialize the data and labels
 print("[INFO] loading images...")
@@ -56,7 +56,12 @@ for imagePath in imagePaths:
     # labels list
     label = imagePath.split(os.path.sep)[-2]
 
-    label = 1 if label == "happy" else 0
+    if label == "Neutral":
+        label=0
+    elif label == "happy":
+        label = 1
+    else:
+        label = 2
     labels.append(label)
 
 # scale the raw pixel intensities to the range [0, 1]
@@ -69,17 +74,17 @@ labels = np.array(labels)
                                                   labels, test_size=0.25, random_state=42)
 
 # convert the labels from integers to vectors
-trainY = to_categorical(trainY, num_classes=2)
-testY = to_categorical(testY, num_classes=2)
+trainY = to_categorical(trainY, num_classes=3)
+testY = to_categorical(testY, num_classes=3)
 # construct the image generator for data augmentation
 aug = ImageDataGenerator(rotation_range=30, width_shift_range=0.1,
                          height_shift_range=0.1, shear_range=0.2, zoom_range=0.2,
                          horizontal_flip=True, fill_mode="nearest")
 # initialize the model
 print("[INFO] compiling model...")
-model = LeNet.build(width=28, height=28, depth=3, classes=2)
+model = LeNet.build(width=28, height=28, depth=3, classes=3)
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
-model.compile(loss="binary_crossentropy", optimizer=opt, metrics=["accuracy"])
+model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
 
 
 # train the network
