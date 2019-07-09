@@ -43,30 +43,30 @@ while True:
 
 	# classify the input image
 
-	# predictions = model.predict(image)
-	# print(np.argmax(predictions[0]))
-	# (happy, angry, neutral) = model.predict( image )[0]
+	predictions = model.predict(image)
+	print(np.argmax(predictions[0]))
+	(happy, angry, neutral) = model.predict( image )[0]
 
-	# # build the label
-	# if happy > neutral and happy > angry:
-	# 	label = "happy"
-	# 	proba = happy
-	#
-	# elif angry > neutral and happy < angry:
-	# 	label = "angry"
-	# 	proba = angry
-	#
-	# elif angry < neutral and neutral > happy:
-	# 	label = "neutral"
-	# 	proba = neutral
-	#
-	# label = "{}: {:.2f}%".format(label, proba * 100)
-	#
-	# # draw the label on the image
-	# output = imutils.resize(orig, width=400)
-	# cv2.putText(I, label, (10, 25),  cv2.FONT_HERSHEY_SIMPLEX,
-	# 			0.7, (0, 255, 0), 2)
-	#
-	# # show the output image
+	# build the label
+	if happy > neutral and happy > angry:
+		label = "happy"
+		proba = happy
+
+	elif angry > neutral and happy < angry:
+		label = "angry"
+		proba = angry
+
+	elif angry < neutral and neutral > happy:
+		label = "neutral"
+		proba = neutral
+
+	label = "{}: {:.2f}%".format(label, proba * 100)
+
+	# draw the label on the image
+	output = imutils.resize(orig, width=400)
+	cv2.putText(I, label, (10, 25),  cv2.FONT_HERSHEY_SIMPLEX,
+				0.7, (0, 255, 0), 2)
+
+	# show the output image
 	cv2.imshow("I", I)
 	cv2.waitKey(2)
