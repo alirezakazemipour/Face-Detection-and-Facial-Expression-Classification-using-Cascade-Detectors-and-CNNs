@@ -51,7 +51,7 @@ while True:
 			label = "happy"
 			proba = happy
 		else:
-			label = "not happy"
+			label = "neutral"
 			proba = not_happy
 		label = "{}: {:.2f}%".format(label, proba * 100)
 

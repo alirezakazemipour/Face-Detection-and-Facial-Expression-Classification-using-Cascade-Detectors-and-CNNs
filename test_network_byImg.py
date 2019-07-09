@@ -12,8 +12,8 @@ import cv2
 # load the trained convolutional neural network
 print( "[INFO] loading network..." )
 model = load_model( "happy_not_happy.model" )
-im_w=96#28
-im_h=96#28
+im_w=28#28
+im_h=28#28
 
 face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
 

@@ -33,8 +33,8 @@ args = vars(ap.parse_args())
 EPOCHS = 35 #25
 INIT_LR = 1e-3
 BS = 8 #32
-im_w=96#28
-im_h=96#28
+im_w=28#28
+im_h=28#28
 
 
 # initialize the data and labels
