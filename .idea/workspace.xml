@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ca38c8-2fcf-4b13-bc14-144ef561d1c3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cascade_train.sh" afterPath="$PROJECT_DIR$/cascade_train.sh" />
-      <change beforePath="$PROJECT_DIR$/resizer.py" afterPath="$PROJECT_DIR$/resizer.py" />
-      <change beforePath="$PROJECT_DIR$/test_network.py" afterPath="$PROJECT_DIR$/test_network.py" />
+      <change beforePath="$PROJECT_DIR$/augmentator.py" afterPath="$PROJECT_DIR$/augmentator.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_network.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_network.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_network.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,8 +86,8 @@
       <file leaf-file-name="augmentator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/augmentator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="292">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -110,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_network.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="train_network.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/train_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
+            <state relative-caret-position="540">
               <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
               <folding />
             </state>
@@ -153,11 +150,11 @@
         <option value="$PROJECT_DIR$/crop_neutral_faces_byclassifyer.py" />
         <option value="$PROJECT_DIR$/AlexNet.py" />
         <option value="$PROJECT_DIR$/test_network_byImg.py" />
-        <option value="$PROJECT_DIR$/augmentator.py" />
         <option value="$PROJECT_DIR$/train_network.py" />
         <option value="$PROJECT_DIR$/resizer.py" />
         <option value="$PROJECT_DIR$/cascade_train.sh" />
         <option value="$PROJECT_DIR$/test_network.py" />
+        <option value="$PROJECT_DIR$/augmentator.py" />
       </list>
     </option>
   </component>
@@ -212,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_network.py">
+  <component name="RunManager" selected="Python.train_network">
     <configuration name="cascade_train.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -222,6 +219,24 @@
       <option name="PARAMETERS" value="" />
       <module name="Face-Detection-and-Facial-Expression-Classification-using-Cascade-Detectors-and-Convolutional-Neural" />
       <envs />
+    </configuration>
+    <configuration name="augmentator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Face-Detection-and-Facial-Expression-Classification-using-Cascade-Detectors-and-Convolutional-Neural" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/augmentator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="resizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,24 +269,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Face-Detection-and-Facial-Expression-Classification-using-Cascade-Detectors-and-Convolutional-Neural" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_network.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="test_network_byImg" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Face-Detection-and-Facial-Expression-Classification-using-Cascade-Detectors-and-Convolutional-Neural" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_network_byImg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,19 +309,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.train_network" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_network_byImg" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_network.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_network" />
-      <item index="4" class="java.lang.String" itemvalue="Python.resizer" />
-      <item index="5" class="java.lang.String" itemvalue="Bash.cascade_train.sh" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_network.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_network" />
+      <item index="3" class="java.lang.String" itemvalue="Python.resizer" />
+      <item index="4" class="java.lang.String" itemvalue="Bash.cascade_train.sh" />
+      <item index="5" class="java.lang.String" itemvalue="Python.augmentator" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_network.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_network" />
-        <item index="2" class="java.lang.String" itemvalue="Bash.cascade_train.sh" />
-        <item index="3" class="java.lang.String" itemvalue="Python.resizer" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test_network_byImg" />
+        <item index="0" class="java.lang.String" itemvalue="Python.augmentator" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_network.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_network" />
+        <item index="3" class="java.lang.String" itemvalue="Bash.cascade_train.sh" />
+        <item index="4" class="java.lang.String" itemvalue="Python.resizer" />
       </list>
     </recent_temporary>
   </component>
@@ -383,7 +380,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3239892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3578732" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3578732" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -718,24 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/augmentator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train_network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_network_byImg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
@@ -779,7 +758,25 @@
     <entry file="file://$PROJECT_DIR$/test_network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/augmentator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
           <folding />
         </state>
       </provider>
