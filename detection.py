@@ -6,7 +6,7 @@ i=155
 k=0
 face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
 
-fnames=glob.glob("/home/alireza/Documents/cv-final-project/Aberdeen/*.jpg")
+fnames=glob.glob("/home/alireza/Documents/cv-final-project/utrecht//*.jpg")
 fnames.sort()
 
 for fname in fnames:

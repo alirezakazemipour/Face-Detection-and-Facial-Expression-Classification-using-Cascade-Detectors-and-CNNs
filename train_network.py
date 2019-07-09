@@ -33,7 +33,7 @@ args = vars(ap.parse_args())
 
 EPOCHS = 40 #25 50
 INIT_LR = 1e-3
-BS = 16#32 16
+BS = 32#32 16
 im_w=28#28
 im_h=28#28
 class_num=3

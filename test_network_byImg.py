@@ -17,7 +17,7 @@ im_h=28#28
 
 face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
 
-fnames=glob.glob("/home/alireza/Documents/cv-final-project/KDEF_and_AKDEF/AKDEF/*.JPG")
+fnames=glob.glob("/home/alireza/Documents/cv-final-project/Face-Detection-and-Facial-Expression-Classification-using-Cascade-Detectors-and-Convolutional-Neural/images/happy/*.jpg")
 fnames.sort()
 
 print(len(fnames))
