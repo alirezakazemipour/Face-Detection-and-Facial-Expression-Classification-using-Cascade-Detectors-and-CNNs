@@ -6,7 +6,7 @@ i=0
 k=0
 face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
 
-fnames=glob.glob("/home/alireza/Documents/cv-final-project/neutral/*.jpg")
+fnames=glob.glob("/home/alireza/Documents/cv-final-project/angry/*.jpg")
 fnames.sort()
 
 for fname in fnames:
@@ -21,7 +21,7 @@ for fname in fnames:
             # cv2.rectangle(I, (x1, y1), (x2, y2), (0,255,0), 2)
 
             J=R[y1:y2,x1:x2]
-            cv2.imwrite("/home/alireza/Documents/cv-final-project/croppedNeutral/"+str(i)+".jpg",J)
+            cv2.imwrite("/home/alireza/Documents/cv-final-project/croppedAngry/"+str(i)+".jpg",J)
             i+=1
 
 cv2.destroyAllWindows()

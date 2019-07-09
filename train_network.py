@@ -12,6 +12,7 @@ from sklearn.model_selection import train_test_split
 from keras.preprocessing.image import img_to_array
 from keras.utils import to_categorical
 from LeNet import LeNet
+from AlexNet import AlexNet
 from imutils import paths
 import matplotlib.pyplot as plt
 import numpy as np
@@ -22,19 +23,20 @@ import os
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-d", "--dataset", required=True,
-	help="path to input dataset")
+    help="path to input dataset")
 ap.add_argument("-m", "--model", required=True,
-	help="path to output model")
+    help="path to output model")
 ap.add_argument("-p", "--plot", type=str, default="plot.png",
-	help="path to output accuracy/loss plot")
+    help="path to output accuracy/loss plot")
 args = vars(ap.parse_args())
-# initialize the number of epochs to train for, initial learning rate,
-# and batch size
-EPOCHS = 50 #25
-INIT_LR = 1e-4
-BS = 16 #32
+
+
+EPOCHS = 40 #25 50
+INIT_LR = 1e-3
+BS = 16#32 16
 im_w=28#28
 im_h=28#28
+class_num=3
 
 
 # initialize the data and labels
@@ -63,8 +65,10 @@ for imagePath in imagePaths:
     #     label=0
     if label == "happy":
         label = 0
-    else:
+    elif label == "angry":
         label = 1
+    else:
+        label= 2
     labels.append(label)
 
 # scale the raw pixel intensities to the range [0, 1]
@@ -77,17 +81,18 @@ labels = np.array(labels)
                                                   labels, test_size=0.25, random_state=42)
 
 # convert the labels from integers to vectors
-trainY = to_categorical(trainY, num_classes=2)
-testY = to_categorical(testY, num_classes=2)
+trainY = to_categorical(trainY, num_classes=class_num)
+testY = to_categorical(testY, num_classes=class_num)
 # construct the image generator for data augmentation
 aug = ImageDataGenerator(rotation_range=30, width_shift_range=0.1,
                          height_shift_range=0.1, shear_range=0.2, zoom_range=0.2,
                          horizontal_flip=True, fill_mode="nearest")
 # initialize the model
 print("[INFO] compiling model...")
-model = LeNet.build(width=im_w, height=im_h, depth=3, classes=2)
+model = LeNet.build(width=im_w, height=im_h, depth=3, classes=class_num)
+# model = AlexNet.build(width=im_w, height=im_h, depth=3, classes=class_num)
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
-model.compile(loss="binary_crossentropy", optimizer=opt, metrics=["accuracy"])
+model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
 
 
 # train the network

@@ -17,7 +17,7 @@ im_h=28#28
 
 face_detector = cv2.CascadeClassifier( '/home/alireza/Documents/cv-final-project/lbp/cascade.xml' )
 
-fnames=glob.glob("/home/alireza/Documents/cv-final-project/utrecht/*.jpg")
+fnames=glob.glob("/home/alireza/Documents/cv-final-project/KDEF_and_AKDEF/AKDEF/*.JPG")
 fnames.sort()
 
 print(len(fnames))
@@ -50,11 +50,22 @@ for fname in fnames:
 
 
         # classify the input image
-        (happy, not_happy) = model.predict(image)[0]
+        (happy, angry, neutral) = model.predict(image)[0]
 
         # build the label
-        label = "happy" if happy > not_happy else "neutral"
-        proba = happy if happy > not_happy else not_happy
+        if happy > neutral and happy > angry:
+            label = "happy"
+            proba = happy
+
+        elif angry > neutral and happy < angry:
+            label = "angry"
+            proba = angry
+
+        elif angry < neutral and neutral > happy:
+            label = "neutral"
+            proba = neutral
+
+
         label = "{}: {:.2f}%".format(label, proba * 100)
 
         # draw the label on the image
