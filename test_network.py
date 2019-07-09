@@ -37,6 +37,7 @@ while True:
 
 	# pre-process the image for classification
 		image = cv2.resize( image, (im_w, im_h) )
+		cv2.imshow("image",image)
 		image = image.astype( "float" ) / 255.0
 		image = img_to_array( image )
 		image = np.expand_dims( image, axis=0 )
