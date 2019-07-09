@@ -49,11 +49,11 @@ while True:
 	(happy, angry, neutral) = model.predict( image )[0]
 
 	# build the label
-	if happy > neutral and happy > angry:
+	if happy >= neutral and happy >= angry:
 		label = "happy"
 		proba = happy
 
-	elif angry > neutral and happy < angry:
+	elif angry >= neutral and happy < angry:
 		label = "angry"
 		proba = angry
 
@@ -61,7 +61,7 @@ while True:
 		label = "neutral"
 		proba = neutral
 
-	label = "{}: {:.2f}%".format(label, proba * 100)
+	# label = "{}: {:.2f}%".format(label, proba * 100)
 
 	# draw the label on the image
 	output = imutils.resize(orig, width=400)

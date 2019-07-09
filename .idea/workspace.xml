@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="36ca38c8-2fcf-4b13-bc14-144ef561d1c3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/augmentator.py" afterPath="$PROJECT_DIR$/augmentator.py" />
       <change beforePath="$PROJECT_DIR$/happy_not_happy.model" afterPath="$PROJECT_DIR$/happy_not_happy.model" />
       <change beforePath="$PROJECT_DIR$/test_network.py" afterPath="$PROJECT_DIR$/test_network.py" />
-      <change beforePath="$PROJECT_DIR$/test_network_byImg.py" afterPath="$PROJECT_DIR$/test_network_byImg.py" />
       <change beforePath="$PROJECT_DIR$/train_network.py" afterPath="$PROJECT_DIR$/train_network.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test_network.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_network.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="42">
+              <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -68,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_network.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="train_network.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+            <state relative-caret-position="504">
+              <caret line="90" column="25" lean-forward="false" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -124,8 +122,8 @@
         <option value="$PROJECT_DIR$/cascade_train.sh" />
         <option value="$PROJECT_DIR$/test_network_byImg.py" />
         <option value="$PROJECT_DIR$/augmentator.py" />
-        <option value="$PROJECT_DIR$/train_network.py" />
         <option value="$PROJECT_DIR$/test_network.py" />
+        <option value="$PROJECT_DIR$/train_network.py" />
       </list>
     </option>
   </component>
@@ -694,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resizer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -732,18 +722,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_network.py">
+    <entry file="file://$PROJECT_DIR$/detection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="18">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        <state relative-caret-position="504">
+          <caret line="90" column="25" lean-forward="false" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
           <folding />
         </state>
       </provider>
