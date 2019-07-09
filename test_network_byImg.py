@@ -53,7 +53,7 @@ for fname in fnames:
         (happy, not_happy) = model.predict(image)[0]
 
         # build the label
-        label = "happy" if happy > not_happy else "not_happy"
+        label = "happy" if happy > not_happy else "neutral"
         proba = happy if happy > not_happy else not_happy
         label = "{}: {:.2f}%".format(label, proba * 100)
 
